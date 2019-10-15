@@ -1,0 +1,22 @@
+{
+  "name": "mindgames",
+  "version": "1.0.0",
+  "description": "mindgames",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "src/bin/brain-games.js": "./src/bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalytalyzin/frontend-project-lvl1.git"
+  },
+  "author": "VitalyTalyzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalytalyzin/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/vitalytalyzin/frontend-project-lvl1#readme"
+}
