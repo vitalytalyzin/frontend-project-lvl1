@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6361e6ea-2b94-4a25-ac18-d279ec9d0605" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mindgames/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mindgames/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mindgames/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mindgames/src/bin/brain-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindgames/src/bin/brain-games.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +17,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SH9LlJTYYs1Hu34pRskUEi1Wju" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -47,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571209600177</updated>
       <workItem from="1571209601474" duration="1039000" />
+      <workItem from="1571511268700" duration="1095000" />
     </task>
     <servers />
   </component>
@@ -58,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
