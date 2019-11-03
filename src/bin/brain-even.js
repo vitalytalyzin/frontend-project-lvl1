@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import letsPlay from '../index';
+import { evenOdd } from '..';
 
-letsPlay();
+evenOdd();
