@@ -14,3 +14,7 @@ Hello! This is my first project!
 
 [![asciicast](https://asciinema.org/a/fRXyeDZi5SkYJ8IGRQmdsdHIL.svg)](https://asciinema.org/a/fRXyeDZi5SkYJ8IGRQmdsdHIL)
 
+#brain-prog
+
+[![asciicast](https://asciinema.org/a/vHJ51vIBkAEccldmjTrN8PY0G.svg)](https://asciinema.org/a/vHJ51vIBkAEccldmjTrN8PY0G)
+
