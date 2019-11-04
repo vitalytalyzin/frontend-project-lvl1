@@ -1,58 +1,33 @@
-import readlineSync from 'readline-sync';
 import getRandomValue from './components/getRandomValue';
-import {
-  askQuestion, sayHello, sayApologize, congratulate, sayTryAgain,
-} from './components/userInteraction';
+import letsPlay from '../index';
 
 const minValue = 1;
 const maxValue = 10;
-let tries = 0;
 
 const signs = '-+*';
 const signsFirstIdx = 0;
 const signsLastInx = signs.length;
 
+const description = 'What is the result of the expression?';
 
 const calculator = () => {
-  console.log('What is the result of the expression?');
+  const value1 = getRandomValue(minValue, maxValue);
+  const value2 = getRandomValue(minValue, maxValue);
+  const getSign = getRandomValue(signsFirstIdx, signsLastInx);
+  let result = 0;
 
-  console.log('');
-  const userName = readlineSync.question('May I have your name? ');
-  sayHello(userName);
-  console.log('');
-
-  while (tries < 3) {
-    const value1 = getRandomValue(minValue, maxValue);
-    const value2 = getRandomValue(minValue, maxValue);
-    const getSign = getRandomValue(signsFirstIdx, signsLastInx);
-    let result = 0;
-
-    const condition = `${value1} ${signs[getSign]} ${value2}`;
-    askQuestion(condition);
-
-    if (signs[getSign] === '-') {
-      result = value1 - value2;
-    } else if (signs[getSign] === '+') {
-      result = value1 + value2;
-    } else if (signs[getSign] === '*') {
-      result = value1 * value2;
-    }
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (Number(userAnswer) === result) {
-      console.log('Correct!');
-      tries += 1;
-    } else {
-      sayApologize(userAnswer, result);
-      sayTryAgain(userName);
-      break;
-    }
+  if (signs[getSign] === '-') {
+    result = value1 - value2;
+  } else if (signs[getSign] === '+') {
+    result = value1 + value2;
+  } else if (signs[getSign] === '*') {
+    result = value1 * value2;
   }
 
-  if (tries > 2) {
-    congratulate(userName);
-  }
+  return {
+    condition: `${value1} ${signs[getSign]} ${value2}`,
+    result: String(result),
+  };
 };
 
-export default calculator;
+export default () => letsPlay(calculator, description);

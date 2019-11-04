@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { evenOdd } from '..';
+import evenOdd from '../games/evenOdd';
 
 evenOdd();
