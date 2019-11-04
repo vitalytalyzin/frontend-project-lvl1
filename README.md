@@ -10,3 +10,7 @@ Hello! This is my first project!
 
 [![asciicast](https://asciinema.org/a/OITrRDJwLd20C5ZFCqqH7USwm.svg)](https://asciinema.org/a/OITrRDJwLd20C5ZFCqqH7USwm)
 
+#brain-gcd
+
+[![asciicast](https://asciinema.org/a/fRXyeDZi5SkYJ8IGRQmdsdHIL.svg)](https://asciinema.org/a/fRXyeDZi5SkYJ8IGRQmdsdHIL)
+
