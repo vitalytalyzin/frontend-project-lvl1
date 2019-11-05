@@ -18,3 +18,6 @@ Hello! This is my first project!
 
 [![asciicast](https://asciinema.org/a/vHJ51vIBkAEccldmjTrN8PY0G.svg)](https://asciinema.org/a/vHJ51vIBkAEccldmjTrN8PY0G)
 
+#brain-prime
+
+[![asciicast](https://asciinema.org/a/kn0o3dKofAcjHsOfovCl3kiTj.svg)](https://asciinema.org/a/kn0o3dKofAcjHsOfovCl3kiTj)
