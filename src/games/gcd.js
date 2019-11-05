@@ -1,4 +1,4 @@
-import getRandomValue from './components/getRandomValue';
+import getRandomValue from './utils/getRandomValue';
 import letsPlay from '../index';
 
 const description = 'Find the greatest common divisor of given numbers.';

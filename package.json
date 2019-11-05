@@ -1,6 +1,6 @@
 {
   "name": "mind_games",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "mind_games",
   "main": "dist/index.js",
   "scripts": {
@@ -13,12 +13,18 @@
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
-    "brain-prog": "dist/bin/brain-progression.js"
+    "brain-prog": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vitalytalyzin/frontend-project-lvl1.git"
   },
+  "keywords": [
+    "brain",
+    "games",
+    "studyProject"
+  ],
   "author": "VitalyTalyzin",
   "license": "ISC",
   "bugs": {
