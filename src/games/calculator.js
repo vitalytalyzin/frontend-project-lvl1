@@ -1,4 +1,4 @@
-import getRandomValue from './utils/getRandomValue';
+import getRandomValue from '../utils/getRandomValue';
 import letsPlay from '../index';
 
 const minValue = 1;

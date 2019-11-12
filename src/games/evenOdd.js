@@ -1,5 +1,6 @@
-import getRandomValue from './utils/getRandomValue';
+import getRandomValue from '../utils/getRandomValue';
 import letsPlay from '../index';
+import isEven from '../utils/isEven';
 
 const minValue = 1;
 const maxValue = 99;
@@ -8,7 +9,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const evenOdd = () => {
   const value = getRandomValue(minValue, maxValue);
-  const result = value % 2 === 0 ? 'yes' : 'no';
+  const result = isEven(value);
 
   return {
     condition: value,
