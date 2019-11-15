@@ -1,15 +1,18 @@
-import getRandomValue from './utils/getRandomValue';
+import getRandomValue from '../utils/getRandomValue';
 import letsPlay from '../index';
+import isPrime from '../utils/isPrime';
 
+const minValue = 2;
+const maxValue = 101;
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = () => {
-  const value = getRandomValue(2, 3572);
+const makeCondition = () => {
+  const question = getRandomValue(minValue, maxValue);
 
   return {
-    condition: value,
-    result: value % 2 === 0 && value !== 2 ? 'no' : 'yes',
+    question,
+    answer: isPrime(question) ? 'yes' : 'no',
   };
 };
 
-export default () => letsPlay(isPrime, description);
+export default () => letsPlay(makeCondition, description);

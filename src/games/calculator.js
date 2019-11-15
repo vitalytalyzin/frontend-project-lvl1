@@ -10,7 +10,7 @@ const signsLastInx = signs.length;
 
 const description = 'What is the result of the expression?';
 
-const calculator = () => {
+const makeCondition = () => {
   const value1 = getRandomValue(minValue, maxValue);
   const value2 = getRandomValue(minValue, maxValue);
   const getSign = getRandomValue(signsFirstIdx, signsLastInx);
@@ -25,9 +25,9 @@ const calculator = () => {
   }
 
   return {
-    condition: `${value1} ${signs[getSign]} ${value2}`,
-    result: String(result),
+    question: `${value1} ${signs[getSign]} ${value2}`,
+    answer: String(result),
   };
 };
 
-export default () => letsPlay(calculator, description);
+export default () => letsPlay(makeCondition, description);

@@ -1,21 +1,19 @@
-import getRandomValue from './utils/getRandomValue';
+import getRandomValue from '../utils/getRandomValue';
 import letsPlay from '../index';
+import getGcd from '../utils/getGcd';
 
+const minValue = 1;
+const maxValue = 100;
 const description = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => {
-  const value1 = getRandomValue(1, 100);
-  const value2 = getRandomValue(1, 100);
-  const biggerValue = value1 > value2 ? value1 : value2;
+const makeCondition = () => {
+  const value1 = getRandomValue(minValue, maxValue);
+  const value2 = getRandomValue(minValue, maxValue);
 
-  for (let i = biggerValue; ; i -= 1) {
-    if (value1 % i === 0 && value2 % i === 0) {
-      return {
-        condition: `${value1} ${value2}`,
-        result: String(i),
-      };
-    }
-  }
+  return {
+    question: `${value1} ${value2}`,
+    answer: String(getGcd(value1, value2)),
+  };
 };
 
-export default () => letsPlay(gcd, description);
+export default () => letsPlay(makeCondition, description);
