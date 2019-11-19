@@ -6,22 +6,28 @@ const maxValue = 10;
 
 const signs = '-+*';
 const signsFirstIdx = 0;
-const signsLastInx = signs.length;
+const signsLastIdx = signs.length;
 
 const description = 'What is the result of the expression?';
 
 const makeCondition = () => {
   const value1 = getRandomValue(minValue, maxValue);
   const value2 = getRandomValue(minValue, maxValue);
-  const getSign = getRandomValue(signsFirstIdx, signsLastInx);
+  const getSign = getRandomValue(signsFirstIdx, signsLastIdx);
   let result = 0;
 
-  if (signs[getSign] === '-') {
-    result = value1 - value2;
-  } else if (signs[getSign] === '+') {
-    result = value1 + value2;
-  } else if (signs[getSign] === '*') {
-    result = value1 * value2;
+  switch (signs[getSign]) {
+    case '-':
+      result = value1 - value2;
+      break;
+    case '+':
+      result = value1 + value2;
+      break;
+    case '*':
+      result = value1 * value2;
+      break;
+    default:
+      result = null;
   }
 
   return {

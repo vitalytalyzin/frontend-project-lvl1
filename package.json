@@ -2,7 +2,7 @@
   "name": "mind_games",
   "version": "1.6.0",
   "description": "mind_games",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
@@ -31,21 +31,21 @@
     "url": "https://github.com/vitalytalyzin/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/vitalytalyzin/frontend-project-lvl1#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/preset-env": "^7.6.3"
-  },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "readline-sync": "^1.4.10"
+    "eslint-plugin-import": "^2.18.2"
   }
 }
