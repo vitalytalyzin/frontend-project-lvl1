@@ -23,13 +23,11 @@ const letsPlay = (condition, description) => {
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${game.answer}.`);
       console.log(`Let's try again, ${userName}!`);
-      break;
-    }
-    if (i === tries - 1) {
-      console.log(`Congratulations, ${userName}!`);
-      break;
+      return;
     }
   }
+
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default letsPlay;
