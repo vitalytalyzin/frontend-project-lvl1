@@ -9,9 +9,9 @@ const letsPlay = (condition, description) => {
   console.log(`Hello, ${userName}`);
   console.log('');
 
-  const tries = 3;
+  const triesCount = 3;
 
-  for (let i = 0; i < tries; i += 1) {
+  for (let i = 0; i < triesCount; i += 1) {
     const game = condition();
 
     console.log(`Question: ${game.question}`);

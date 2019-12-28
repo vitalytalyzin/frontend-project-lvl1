@@ -5,18 +5,18 @@ const minValue = 1;
 const maxValue = 10;
 
 const signs = '-+*';
-const signsFirstIdx = 0;
-const signsLastIdx = signs.length;
+const signsFirstIndex = 0;
+const signsLastIndex = signs.length - 1;
 
 const description = 'What is the result of the expression?';
 
 const makeCondition = () => {
   const value1 = getRandomValue(minValue, maxValue);
   const value2 = getRandomValue(minValue, maxValue);
-  const getSign = getRandomValue(signsFirstIdx, signsLastIdx);
-  let result = 0;
+  const signType = getRandomValue(signsFirstIndex, signsLastIndex);
+  let result;
 
-  switch (signs[getSign]) {
+  switch (signs[signType]) {
     case '-':
       result = value1 - value2;
       break;
@@ -27,11 +27,11 @@ const makeCondition = () => {
       result = value1 * value2;
       break;
     default:
-      result = null;
+      return null;
   }
 
   return {
-    question: `${value1} ${signs[getSign]} ${value2}`,
+    question: `${value1} ${signs[signType]} ${value2}`,
     answer: String(result),
   };
 };
