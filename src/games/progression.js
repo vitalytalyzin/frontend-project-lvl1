@@ -1,5 +1,5 @@
 import getRandomValue from '../utils/getRandomValue';
-import letsPlay from '../index';
+import letsPlay from '..';
 
 const progressionLength = 10;
 const initialValue = 0;

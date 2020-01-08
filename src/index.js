@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const triesCount = 3;
+
 const letsPlay = (condition, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
@@ -8,8 +10,6 @@ const letsPlay = (condition, description) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
   console.log('');
-
-  const triesCount = 3;
 
   for (let i = 0; i < triesCount; i += 1) {
     const game = condition();

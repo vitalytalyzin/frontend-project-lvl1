@@ -1,5 +1,5 @@
 import getRandomValue from '../utils/getRandomValue';
-import letsPlay from '../index';
+import letsPlay from '..';
 
 const minValue = 1;
 const maxValue = 100;
